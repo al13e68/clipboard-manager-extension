@@ -1,0 +1,58 @@
+body {
+    font-family: Arial, sans-serif;
+    width: 300px; /* Increased width for better visibility */
+}
+
+h1 {
+    font-size: 18px;
+    margin: 10px;
+}
+
+#historyContainer {
+    max-height: 300px; /* Set a maximum height for the container */
+    overflow-y: auto; /* Enable vertical scrolling */
+    border: 1px solid #ccc; /* Add a border for better visibility */
+    margin: 10px;
+}
+
+ul {
+    display: flex;
+    flex-direction: column-reverse;
+}
+
+li {
+    padding: 10px;
+    border-bottom: 1px solid #ccc;
+    display: flex; /* Use flexbox for alignment */
+    justify-content: space-between; /* Space between text and button */
+    align-items: center; /* Center items vertically */
+}
+
+.truncated {
+    overflow: hidden;
+    white-space: nowrap; /* Prevent text from wrapping */
+    text-overflow: ellipsis; /* Add ellipsis for overflow */
+    max-width: 200px; /* Set a max width for the text */
+}
+
+button {
+    background-color: #007bff; /* Bootstrap primary color */
+    color: white;
+    border: none;
+    padding: 5px 10px;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: #0056b3; /* Darker shade on hover */
+}
+
+.show-more {
+    background-color: transparent;
+    color: #007bff;
+    border: none;
+    cursor: pointer;
+    padding: 0;
+    text-decoration: underline;
+}
